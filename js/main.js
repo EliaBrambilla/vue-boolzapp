@@ -375,3 +375,38 @@ new Vue({
 		newName:'',
 		
 	},
+    // aggiungo methods
+    methods:{
+		selectedChat(index){
+			this.selectIndex=index;
+		},
+		addMex(){
+			if(this.newMex){
+				this.contacts[this.selectIndex].messages.push({
+					date:'',
+					message:this.newMex,
+					status:'sent',
+				})
+				this.newMex='';	
+				risposta={
+					date:'',
+					message:'OK',
+					status:'received',
+				};
+				setTimeout(() => this.contacts[this.selectIndex].messages.push(risposta), 1000);			
+			}
+			
+		},
+		comparaNomi(){
+			this.contacts.forEach((ele,i)=>{
+					if (this.newName !== this.contacts[i].name.toLowerCase().slice(0, this.newName.length)) {
+						this.contacts[i].visible = false;
+					} else {
+						this.contacts[i].visible = true;
+					}
+				});
+			}
+		},
+
+	});
+	

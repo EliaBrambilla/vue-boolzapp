@@ -18,6 +18,90 @@
 
 </head>
 <body>
+
+    <div id="root">
+		<div class="container-est">
+			<div class="lista-chat">
+				<div class="left">
+					<div class="profile">
+						<div class="imagine"><img  class="img-logo" src="img 1/avatar_io.jpg" alt="logo-profile"> <div>Sofia</div></div>
+						<div class="icon">
+							<i class="fa-solid fa-circle-notch"></i>
+							<i class="fa-solid fa-message"></i>
+							<i class="fa-solid fa-ellipsis-vertical"></i>
+						</div>
+					</div>
+					<div class="ricevi-not">
+						<span class="notifica"><i class="fa-solid fa-bell-slash"></i></span>
+						<div class="testo-not">
+							<h4>Ricevi notifiche di nuovi messaggi</h4> 
+							<div><a href="!#">Attiva notifiche di testo</a></div>
+						</div>
+					</div>
+					<form @submit.prevent="comparaNomi" class="ricerca">
+						<button class="search-lens"><i class="fa-solid fa-magnifying-glass"></i></button>
+						<input @keyup="comparaNomi" class="search-bar" type="search" name="" id="" placeholder="Cerca o inizia una nuova chat" v-model="newName">
+	
+					</form>
+					<div class="list">
+						
+						<div class="chat-list" v-for="(contact, i) in contacts"  @click="selectedChat(i)" v-if="contact.visible === true" >
+							
+							<img :src="contact.avatar" class="img-chat">
+							
+							<div class="riquadro-premex">
+								<div>{{contact.name}}</div> 
+								<div class="ultimo-msg">{{ contact.messages[contact.messages.length - 1].message.slice(0,10) + "..." }}</div>
+							</div>
+							<span class="data">{{ contact.messages[contact.messages.length - 1].date.slice(10,16)}}</span>
+							
+						</div>
+	
+					</div>
+				</div>
+				<div class="messaggio-right">
+					<div class="profile-sup" >
+						<div class="imagine" v-for="(contact,i) in contacts" v-if="i===selectIndex">
+							<img  class="img-logo" :src="contact.avatar" alt="logo-profile"> 
+							<div>
+								<div>{{contact.name}}</div>
+								<div class="ultimo-msg">ultimo accesso</div>
+							</div>
+							
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<i class="fa-solid fa-message"></i>
+							<i class="fa-solid fa-ellipsis-vertical"></i>
+						</div>
+					</div>
+					<div class="text-chat" v-for="(contact,i) in contacts" v-if="i===selectIndex">
+						<div v-for="message in contact.messages":class="message.status==='received'? 'ricevuto':'inviato'" >
+							<div>{{message.message}}</div>
+							<span class="data">{{ message.date.slice(10,16)}}</span>
+
+							
+
+						</div>
+						
+					</div>
+					<div class="write-msg">
+						<i class="fa-regular fa-face-smile"></i>
+						<form @submit.prevent="addMex">
+							<input @keyup.enter="addMex" class="msg-bar" type="text" name="" id="" placeholder="Scrivi un messaggio" v-model="newMex">
+						</form>
+						<i class="fa-solid fa-microphone"></i>						
+					</div>
+
+	
+					
+				</div>
+	
+			</div>
+		</div>
+	
+
+	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" ></script>
 	<script src="./js/main.js" ></script>

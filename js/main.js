@@ -5,7 +5,7 @@ new Vue({
 		contacts: [ 
 			{
 				name: 'Michele',
-				avatar: 'img 1/avatar_1.jpg',
+				avatar: 'img/avatar_1.jpg',
 				visible: true,
 				messages: [
 					{
@@ -27,7 +27,7 @@ new Vue({
 			},
 			{
 				name: 'Samuele',
-				avatar: 'img 1/avatar_3.jpg',
+				avatar: 'img/avatar_3.jpg',
 				visible: true,
 				messages: 
 				[
@@ -52,7 +52,7 @@ new Vue({
 			}, 
 			{
 				name: 'Alessandro B.',
-				avatar: 'img 1/avatar_4.jpg',
+				avatar: 'img/avatar_4.jpg',
 				visible: true,
 				messages: 
 				[
@@ -70,7 +70,7 @@ new Vue({
 			}, 
 			{
 				name: 'Alessandro L.',
-				avatar: 'img 1/avatar_5.jpg',
+				avatar: 'img/avatar_5.jpg',
 				visible: true,
 				messages: 
 				[
@@ -89,7 +89,7 @@ new Vue({
 			}, 
 			{
 				name: 'Claudia',
-				avatar: 'img 1/avatar_6.jpg',
+				avatar: 'img/avatar_6.jpg',
 				visible: true,
 				messages: 
 				[
@@ -112,7 +112,7 @@ new Vue({
 			}, 
 			{
 				name: 'Federica',
-				avatar: 'img 1/avatar_7.jpg',
+				avatar: 'img/avatar_7.jpg',
 				visible: true,
 				messages: 
 				[
@@ -130,7 +130,7 @@ new Vue({
 			}, 
 			{
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -154,7 +154,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -178,7 +178,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -202,7 +202,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -226,7 +226,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -250,7 +250,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -274,7 +274,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -298,7 +298,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -322,7 +322,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[
@@ -346,7 +346,7 @@ new Vue({
 			},
             {
 				name: 'Davide',
-				avatar: 'img 1/avatar_8.jpg',
+				avatar: 'img/avatar_8.jpg',
 				visible: true,
 				messages: 
 				[

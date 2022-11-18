@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+.container-est{
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(217, 217, 201, 0.809);
+	border-top:10rem solid rgb(29, 151, 143);
+	
+}
+.list{
+	height: 19.3rem;
+	overflow-y: scroll;
+}
+.lista-chat{
+	max-width: 1300px;
+	margin: auto;
+	margin-top: -2rem;
+	display: flex;
+}
+.left{
+	flex:0 0 30%;
+	height: 10rem;
+}
+.profile{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(245, 240, 240);
+	padding: .5rem;
+	align-items: center;
+	border-right: 1px solid lightgray;	
+	height: 4rem;
+}
+.profile-sup{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(245, 240, 240);
+	padding: .5rem;
+	align-items: center;
+	border-right: 1px solid lightgray;
+	height: 4rem;
+}
+.imagine{
+	flex: 0 0 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content:left;
+}
+
+.img-logo{
+	width: 50px;
+	border-radius: 50%;
+}
+.icon{
+	flex:0 0 50%;
+	color: rgb(179, 179, 179);
+	display:flex;
+	justify-content: right;
+	gap:1rem;	
+}
+.ricevi-not{
+	background-color: rgb(97, 200, 248);
+	padding: 2rem 1rem;
+	display: flex;
+	justify-content: left;
+	height:8rem
+
+}
+.notifica {
+	color: rgb(97, 200, 248);
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chat-list{
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	border-top: 1px solid rgb(179, 179, 179);
+	padding: .5rem;
+
+}
+.ricerca{
+	background-color: rgb(245, 240, 240);
+	padding: .5rem;
+	height:3rem;
+	display: flex;
+	
+}
+.search-bar{
+	width: 80%;
+	height: 2rem;
+	border:.5px solid rgb(179, 179, 179);
+	color: rgb(191, 191, 191);
+	padding: .5rem;
+}
+.search-lens{
+	width: 20%;
+	height: 2rem;
+	background-color: white;
+	border:.5px solid rgb(179, 179, 179);
+	color: rgb(191, 191, 191);
+}
+.ultimo-msg{
+	color: rgb(191, 191, 191);
+
+}
+.img-chat{
+	width: 50px;
+	border-radius: 50%;
+
+}
+.messaggio-right{
+	flex:0 0 70%;
+	height: 10rem;
+}
+.text-chat{
+	background-image: url("../img/mine.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 27.3rem;
+	
+}
+.write-msg{
+	display: flex;
+	justify-content: space-evenly;
+	background-color:rgb(240, 233, 224);
+	align-items: center;
+	height: 3rem;
+	color: rgb(107, 107, 107);
+	font-size: 1rem;
+}
+.msg-bar{
+	width: 720px;
+	height: 2rem;
+	border: rgb(240, 233, 224);
+	padding: .5rem;
+}
+.text-chat{
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+
+}
+.ricevuto{
+	background-color: white;
+	align-self: flex-start;	
+	margin:1rem;
+	padding: 1rem;
+	width: 20rem;
+	border-radius: 10px;
+}
+.inviato{
+	background-color: rgb(159, 224, 142);
+	align-self: flex-end;
+	margin:1rem;
+	padding: 1rem;
+	width: 20rem;
+	border-radius: 10px;
+
+}
+.data{
+	display: flex;
+	justify-content: end;
+	
+}
+.active{
+	display: block;
+}
